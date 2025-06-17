@@ -72,7 +72,9 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
-      Plugin.Citations({ linkCitations: true, csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/acm-sig-proceedings.csl" })
+      Plugin.Citations({ linkCitations: true,
+        csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/acm-sig-proceedings.csl",
+        suppressBibliography: false })
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
