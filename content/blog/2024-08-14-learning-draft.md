@@ -2,6 +2,7 @@
 title: Theories of Learning
 draft: true
 date: 2024-08-14
+author: Sayak Chowdhury
 ---
 ### Aristotle:
 

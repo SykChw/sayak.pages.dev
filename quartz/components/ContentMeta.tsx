@@ -42,6 +42,10 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         segments.push(<span>{displayedTime}</span>)
       }
 
+      if (fileData.frontmatter?.author) {
+        segments.push(<span>by {fileData.frontmatter.author}</span>)
+      }
+
       return (
         <p show-comma={options.showComma} class={classNames(displayClass, "content-meta")}>
           {segments}
