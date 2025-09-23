@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Optimization</title>
+  <style>
+    :root{
+      --max-width: 1100px;
+      --embed-width: 60%;
+      --embed-height: 600px;
+      --gap: 2rem;
+      --muted: #6b7280;
+    }
+    body{
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin: 0;
+      padding: 2rem;
+      background: #fff;
+      color: #111827;
+      display: flex;
+      justify-content: center;
+    }
+    .page {
+      width: 100%;
+      max-width: var(--max-width);
+    }
+    header h1{
+      margin: 0 0 1rem 0;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+    }
+    .section {
+      margin-bottom: var(--gap);
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    .section h2{
+      margin: 0 0 0.75rem 0;
+      font-size: 1.25rem;
+    }
+    .embed-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+    .embed-wrap embed,
+    .embed-wrap iframe {
+      width: var(--embed-width);
+      max-width: 100%;
+      height: var(--embed-height);
+      border: 1px solid #ddd;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .fallback {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .fallback a {
+      color: inherit;
+      text-decoration: underline;
+    }
+    @media (max-width: 700px) {
+      :root { --embed-width: 95%; --embed-height: 480px; }
+      header h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>News</h1>
+      <p style="color:var(--muted); margin:0.25rem 0 1.25rem 0;">Embedded PDFs</p>
+    </header>
+
+    <section class="section" id="survey-optimization">
+      <h2>A Survey of Optimization Methods</h2>
+      <div class="embed-wrap">
+        <embed src="/content/assets/A-Survey-of-Optimization-Methods_MLPerspective.pdf" type="application/pdf" />
+      </div>
+      <div class="fallback">
+        If the PDF doesn't render in your browser, <a href="/content/assets/A-Survey-of-Optimization-Methods_MLPerspective.pdf" target="_blank" rel="noopener">open/download the PDF</a>.
+      </div>
+    </section>
+
+    <section class="section" id="natural-gradient">
+      <h2>Why Natural Gradient?</h2>
+      <div class="embed-wrap">
+        <embed src="/content/assets/WhyNaturalGradient_Amari.pdf" type="application/pdf" />
+      </div>
+      <div class="fallback">
+        <a href="/content/assets/WhyNaturalGradient_Amari.pdf" target="_blank" rel="noopener">Open/download the PDF</a>.
+      </div>
+    </section>
+
+    <section class="section" id="optimization-ml">
+      <h2>Optimization for Machine Learning</h2>
+      <div class="embed-wrap">
+        <embed src="/content/assets/Optimization_for_Machine_Learning_Lecture-notes.pdf" type="application/pdf" />
+      </div>
+      <div class="fallback">
+        <a href="/content/assets/Optimization_for_Machine_Learning_Lecture-notes.pdf" target="_blank" rel="noopener">Open/download the PDF</a>.
+      </div>
+    </section>
+
+    <section class="section" id="second-order">
+      <h2>Second-order Optimization for Neural Networks</h2>
+      <div class="embed-wrap">
+        <embed src="/content/assets/SecondOrderOptimization_PhDThesis_Martens.pdf" type="application/pdf" />
+      </div>
+      <div class="fallback">
+        <a href="/content/assets/SecondOrderOptimization_PhDThesis_Martens.pdf" target="_blank" rel="noopener">Open/download the PDF</a>.
+      </div>
+    </section>
+
+    <section class="section" id="convex-opt">
+      <h2>Convex Optimization: Algorithms and Complexity</h2>
+      <div class="embed-wrap">
+        <embed src="/content/assets/ConvexOptimization_AlgorithmsAndComplexity.pdf" type="application/pdf" />
+      </div>
+      <div class="fallback">
+        <a href="/content/assets/ConvexOptimization_AlgorithmsAndComplexity.pdf" target="_blank" rel="noopener">Open/download the PDF</a>.
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
