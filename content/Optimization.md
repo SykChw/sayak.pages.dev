@@ -1,5 +1,5 @@
 ---
-title: News
+title: Optimization
 ---
 # A Survey of Optimization Methods
 
