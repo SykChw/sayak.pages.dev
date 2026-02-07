@@ -1,5 +1,6 @@
 ---
 title: About Me
+comments: "false"
 ---
 Hello, I’m currently a Research Scholar @ IIIT Bangalore, working on my Masters. My area of research mostly includes Verification of Neural Networks and AI Safety; trying to forge connections between the disparate domains of Machine Learning, Formal Verification and Software Engineering. I also enjoy extending my curiosities into areas like Artificial Life simulations, theories of the mind and other diverse fields when I’m not working. Besides that, I have a great appreciation for storytelling as an art form, and enjoy expressing myself through writing and sketching.
 
