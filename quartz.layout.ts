@@ -5,7 +5,23 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.Comments({
+      provider: 'giscus',
+      options: {
+        // from data-repo
+        repo: 'SykChw/sayak.pages.dev',
+        // from data-repo-id
+        repoId: 'R_kgDOOv5JIg',
+        // from data-category
+        category: 'Announcements',
+        // from data-category-id
+        categoryId: 'DIC_kwDOOv5JIs4C1_9n',
+        // Ensure default theme is dark
+        darkTheme: 'dark',
+      }
+    }),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/SykChw",
@@ -35,7 +51,7 @@ export const defaultContentPageLayout: PageLayout = {
           Component: Component.Search(),
           grow: true,
         },
-        { Component: Component.Darkmode() },
+        { Component: Component.Darkmode() }, // Ensure default theme is dark
         { Component: Component.ReaderMode() },
       ],
     }),
